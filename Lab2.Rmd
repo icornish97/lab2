@@ -1,0 +1,33 @@
+---
+title: "Group 5 Lab 2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Question set #1 (Group)
+
+1. There were 1852 chocolate bars reviewed 
+2. The number of ratings gradually increases until  the year of 2016 where we see a continual decrease in the number of ratings though the present.
+
+```{R}
+library(ggplot2)
+choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
+head(choco)
+ggplot(aes(x = Review.Date),data = choco) + geom_bar()
+```
+
+3.
+
+
+## Question set #2
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
