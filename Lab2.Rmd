@@ -18,4 +18,13 @@ choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ggplot(aes(x = Review.Date),data = choco) + geom_bar()
 ```
+## Question set #2 (Team)
+1.
 
+2.
+
+3. Across the different company locations in the top 3 countries with the most ratings The USA has a significant greater amount of ratings compared to France and Canada which are similar. France and Canada have between 100 and 200 ratings while the USA has almost 800
+```{R}
+Top3<- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
+ggplot(data=Top3, aes(x=Company.Location))+geom_bar()
+```
