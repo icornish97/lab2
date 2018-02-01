@@ -1,7 +1,7 @@
 ---
 title: "Group 5 Lab 2"
 output: html_document
-author: Ian Cornish, Taylor Rouse, and Barrett Hill
+team members: Ian Cornish, Taylor Rouse, and Barrett Hill
 ---
 
 ```{r setup, include=FALSE}
