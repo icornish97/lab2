@@ -1,7 +1,6 @@
 ---
 title: "Group 5 Lab 2"
 output: html_document
-team members: 
 ---
 
 ```{r setup, include=FALSE}
@@ -20,15 +19,18 @@ head(choco)
 ggplot(aes(x = Review.Date),data = choco) + geom_bar()
 ```
 ## Question set #2 (Team)
-1.
+1. The distribution of the ratings is unimodal and fairly symmetric. There are outliers above at 5, and below at 1 and 1.5. The median appears to be about 3 or 3.25.
+```{R}
+ggplot(data = choco, aes(x = Rating)) +
+  geom_histogram(binwidth = .25)
+```
 
-2. From what we have observed there is not a significant impact on the rating of the chocolate based on the cocoa percentage. That being said there were some interesting observations worth noting. 
+2.From what we have observed there is not a significant impact on the rating of the chocolate based on the cocoa percentage. That being said there were some interesting observations worth noting. 
  + No chocolate with a 90% cocoa percentage or above had a 4 or higher rating. 
  + The higher the rating the tighter the distribution of cocoa percentage got to 70%. 
  + The only five star rating had a cocoa percentage of 70%
  + One of the chocolates that recieved a one star ratings also had a cocoa percentage of 70%
  
-
 ```{R}
 ggplot(aes(x=Rating, y = Cocoa.Pct), data = choco) + geom_point()
 ```
