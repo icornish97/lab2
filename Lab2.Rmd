@@ -21,7 +21,7 @@ ggplot(aes(x = Review.Date),data = choco) + geom_bar()
 ## Question set #2 (Team)
 1.
 
-2.From what we have observed there is not a significant impact on the rating of the chocolate based on the cocoa percentage. That being said there were some interesting observations worth noting. 
+2. From what we have observed there is not a significant impact on the rating of the chocolate based on the cocoa percentage. That being said there were some interesting observations worth noting. 
  + No chocolate with a 90% cocoa percentage or above had a 4 or higher rating. 
  + The higher the rating the tighter the distribution of cocoa percentage got to 70%. 
  + The only five star rating had a cocoa percentage of 70%
