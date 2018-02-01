@@ -22,6 +22,7 @@ choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ggplot(aes(x = Review.Date),data = choco) + geom_bar()
 ```
+
 ## Question set #2 (Individual)
 1. The distribution of the ratings is unimodal and fairly symmetric. There are outliers above at 5, and below at 1 and 1.5. The median appears to be about 3 or 3.25.
 ```{R}
@@ -44,6 +45,7 @@ ggplot(aes(x=Rating, y = Cocoa.Pct), data = choco) + geom_point()
 Top3<- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
 ggplot(data=Top3, aes(x=Company.Location))+geom_bar()
 ```
+
 ## Paragraph 
 
 Our team was able to use github in order to aid our workflow. We were able to collaborate on the group questions in person which was very easy. When we moved on to the individual questions we assigned each member of our group one question to complete. We were all able to complete the tasks that we were assigned and commit our changes to the github repository. Overall github was a fast and easy way to finish a group task!  
