@@ -21,7 +21,16 @@ ggplot(aes(x = Review.Date),data = choco) + geom_bar()
 ## Question set #2 (Team)
 1.
 
-2.
+2.From what we have observed there is not a significant impact on the rating of the chocolate based on the cocoa percentage. That being said there were some interesting observations worth noting. 
+ + No chocolate with a 90% cocoa percentage or above had a 4 or higher rating. 
+ + The higher the rating the tighter the distribution of cocoa percentage got to 70%. 
+ + The only five star rating had a cocoa percentage of 70%
+ + One of the chocolates that recieved a one star ratings also had a cocoa percentage of 70%
+ 
+
+```{R}
+ggplot(aes(x=Rating, y = Cocoa.Pct), data = choco) + geom_point()
+```
 
 3. Across the different company locations in the top 3 countries with the most ratings The USA has a significant greater amount of ratings compared to France and Canada which are similar. France and Canada have between 100 and 200 ratings while the USA has almost 800
 ```{R}
