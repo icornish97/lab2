@@ -1,6 +1,7 @@
 ---
 title: "Group 5 Lab 2"
 output: html_document
+team members: 
 ---
 
 ```{r setup, include=FALSE}
